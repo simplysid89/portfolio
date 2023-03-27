@@ -58,3 +58,90 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width:100%;
 }
+
+.header-text{
+    margin-top:20% ;
+    font-size: 30px; 
+}
+
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+#about{
+    padding: 80px 0;
+    color:rgb(0, 0, 0) ;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.aboutcol1{
+    flex-basis: 35%;
+}
+
+.aboutcol1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.aboutcol2{
+    flex-basis: 60%;
+    
+}
+
+.subtitle{
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+}
+
+.tabtitles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tablinks{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tablinks::after{
+    content: '';
+    width:100;
+    height: 3px;
+    background:#f50000;
+    position:absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tablinks.activelink::after{
+    width:50%;
+
+}
+
+.tabcontents ul li{
+    list-style: none;
+    margin:10px 0;
+
+}
+
+.tabcontents ul li span{
+    color: #f50000;
+    font-size: 14px;
+
+}
+
+.tabcontents{
+    display: none;
+}
+
+.tabcontents.activetab{
+    display: block;
+}

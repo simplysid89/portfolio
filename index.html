@@ -18,7 +18,75 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
+            <div class="header-text">
+                <h1>Hi, Im Sid! <br> I love cars and bikes</h1>
+                <p>Car & Bike Enthusiast</p>
+                
+            </div>
         </div>
     </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboutcol1">
+                    <img src="images/about.jpg">
+                </div>
+                <div class="aboutcol2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>
+                        Hey! I'm Siddanth, a third year computer science student 
+                        who has a deep passion for cars and bikes. 
+                        I love going on long rides while listening to my favorite music. 
+                        <br>
+                        I'm also a tech enthusiast and enjoy discussing new technologies. 
+                        I am always in awe of the mysteries of the universe, the stars, and the planets. 
+                        In my free time, you can find me reading about the latest space discoveries or studying complex theories of physics. I love meeting like-minded people who share my interests and am always looking for new experiences and opportunities to learn more about the wonders of the universe.
+                    </p>
+                    <div class="tabtitles">
+                        <p class="tablinks activelink" onclick="opentab('skills')">skills</p>
+                        <p class="tablinks" onclick="opentab('experience')"">experinece</p>
+                        <p class="tablinks" onclick="opentab('education')"">education</p>
+                    </div>
+                    <div class="tabcontents activetab" id="skills">
+                        <ul>
+                            <li><span>fff</span><br>ffff fff </li>
+                            <li><span>fff</span><br>ffff fff </li>
+                            <li><span>fff</span><br>ffff fff </li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="experience">
+                        <ul>
+                            <li><span>eee</span><br>ffff fff </li>
+                            <li><span>rrr</span><br>ffff fff </li>
+                            <li><span>fhhb</span><br>ffff fff </li>
+                        </ul>
+                    </div>
+                    <div class="tabcontents" id="education">
+                        <ul>
+                            <li><span>oooo</span><br>ffff fff </li>
+                            <li><span>oopop</span><br>ffff fff </li>
+                            <li><span>opspkd</span><br>ffff fff </li>
+                        </ul>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tablinks");
+        var tabcontents=document.getElementsByClassName("tabcontents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("activelink");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activetab");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetab");
+        }
+
+    </script>
 </body>
 </html>
