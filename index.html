@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio1</title>
+    <title>Sid G</title>
 </head>
 <body>
     <div id="header">
@@ -47,7 +47,7 @@
                     <br>    
                     <p>
                         I love meeting like-minded people who share my interests and am always looking for new experiences and opportunities 
-                        to learn more about the wonders of the universe.
+                        to learn more.
                     </p>
                     <div class="tabtitles">
                         <p class="tablinks activelink" onclick="opentab('skills')">Technical Skills</p>
@@ -78,21 +78,30 @@
             </div>
         </div>
     </div>
-    <script>
-        var tablinks=document.getElementsByClassName("tablinks");
-        var tabcontents=document.getElementsByClassName("tabcontents");
+    <div id="gallery">
+        <div class="container">
+            <h1 class="subtitle">Gallery</h1>
+            <div class="galleryblock">
+                <div>
+                    <h2>Me</h2>
+                    <p>Some pictures of me..</p>
+                    <a href="#">View</a>
+                </div>
+                <div>
+                    <h2>My Adventures</h2>
+                    <p>World through my lens</p>
+                    <a href="#">View</a>
+                </div>
+                <div>
+                    <h2>Cars & Bikes</h2>
+                    <p>Discovering the Cars and Bikes That Move Me</p>
+                    <a href="#">View</a>
+                </div>
+            </div>
+        </div>    
+    </div>
+<script src="script.js">
 
-        function opentab(tabname){
-            for(tablink of tablinks){
-                tablink.classList.remove("activelink");
-            }
-            for(tabcontent of tabcontents){
-                tabcontent.classList.remove("activetab");
-            }
-            event.currentTarget.classList.add("activelink");
-            document.getElementById(tabname).classList.add("activetab");
-        }
-
-    </script>
+</script>
 </body>
 </html>
